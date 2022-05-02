@@ -22,7 +22,7 @@ const Main = (props) => {
                       <div className="price">
                         <p>{subItem.price.replace(".", ",")} €</p>
                         {subItem.popular === true ? (
-                          <p id="populaire">Populaire</p>
+                          <p id="populaire">★ Populaire</p>
                         ) : null}
                       </div>
                     </div>
