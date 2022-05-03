@@ -129,24 +129,74 @@ header img {
 
 .panier{
   background-color: white;
-  height: 100px;
-  /* width: 85%; */
   margin:50px 40px;
+  padding-top: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 200px;
   border-radius: 10px;
   position: sticky;
   top: 30px;
+  height: 20%;
 }
 .panier button{
   width: 90%;
   padding: 15px 15px;
-  background-color: #BAC3C3;
   border-radius: 5px;
   opacity: 0.8;
   font-size: 16px;
   font-weight: bold;
+  border: none;
+  color: white;
+}
+.enabled{
+  background-color: #00CDBD;
+}
+.disabled{
+  background-color: #BAC3C3;
+  color: black!important;
+  opacity: 0.5!important;
+}
+.div-panier{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  width: 100%;
+  
+}
+.counter{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: lightgreen;
+  flex: 1;
+}
+
+.counter p{
+  color: black;
+}
+.panier-title{
+  flex: 3;
+  margin-left: 10px;
+}
+.panier-price{
+  flex: 1;
+}
+.sous-total{
+  border-top: solid gray 1px;
+}
+.sous-total :nth-child(3){
+  border-top: solid gray 1px;
+  
+}
+.total-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span{
+  font-weight: bold;
+  font-size: larger;
 }
