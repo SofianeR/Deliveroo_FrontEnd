@@ -77,6 +77,11 @@ header img {
   border-radius: 10px;
 
 }
+.subItem:hover{
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+  cursor: pointer;
+  
+}
 
 .text-item{
   /* border: solid coral 2px;   */
