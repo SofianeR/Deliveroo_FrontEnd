@@ -36,8 +36,7 @@ header img {
 }
 .top img {
   width: 29%;
-    border-radius: 5px;
-  
+  border-radius: 5px;
 }
 
 #main{
@@ -75,7 +74,6 @@ header img {
   margin:10px 0px;
   margin-right: 10px;
   border-radius: 10px;
-
 }
 .subItem:hover{
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
@@ -140,6 +138,8 @@ header img {
   align-items: center;
   height: 200px;
   border-radius: 10px;
+  position: sticky;
+  top: 30px;
 }
 .panier button{
   width: 90%;
