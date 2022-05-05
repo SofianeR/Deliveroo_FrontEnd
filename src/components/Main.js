@@ -8,9 +8,15 @@ const Main = ({
   const handleClickDiv = (index, subItem) => {
     {
       const newArrayPanier = [...arrayPanier];
+      const newArrayCounter = [...arrayPanier];
+
       if (
-        newArrayPanier.filter((elmt) => elmt.itemPanier === subItem).length < 1
+        // newArrayPanier.filter((elmt) => elmt.itemPanier === subItem).length < 1
+        newArrayCounter.find((element) => element.itemPanier.id === subItem.id)
       ) {
+        newArrayCounter[index].counter += 1;
+        setArrayPanier(newArrayCounter);
+      } else {
         newArrayPanier.push({
           counter: 1,
           itemPanier: subItem,
@@ -20,11 +26,6 @@ const Main = ({
         const newArrayPrice = [...pricePanier];
         newArrayPrice.push(subItem.price);
         setPricePanier(newArrayPrice);
-      } else {
-        const newArrayCounter = [...arrayPanier];
-        console.log(newArrayCounter[index]);
-        newArrayCounter[index].counter += 1;
-        setArrayPanier(newArrayCounter);
       }
     }
   };
